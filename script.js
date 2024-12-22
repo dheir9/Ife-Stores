@@ -16,6 +16,8 @@ document.querySelector('.hamburger').addEventListener('click', function () {
   document.querySelector('.nav-menu').classList.toggle('active');
 });
 
+
+
 // slider-container
 const sliderContainer = document.querySelector('.slider-container');
 const prevBtn = document.querySelector('.prev-btn');

@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #15381e;
+  background-color: #08520e;
   font-family: 'Josefin Sans', 'Titillium Web', sans-serif;
   font-size: 16px;
   padding-top: 330px;
@@ -53,6 +53,14 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.nav-menu {
+  display: none;
+}
+.nav-menu.active {
+  display: block;
+}
+
 
 .nav-menu ul li {
   margin: 0 45px;
@@ -124,12 +132,12 @@ body {
   flex-wrap: wrap; /* Ensures responsive wrapping on smaller screens */
   gap: 10px; /* Adds space between sliders */
   justify-content: center; /* Centers the sliders horizontally */
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
 }
 
 .slider-container {
-  display: flex;
+  display: block;
   flex-direction: column; /* Keeps individual sliders in a column layout within each box */
   align-items: center;
   gap: 10px;
@@ -137,7 +145,7 @@ body {
 
 .slider-box {
   flex: 0 0 300px; /* Sets a fixed width for each box */
-  margin: 5px;
+  margin: 20px;
   overflow: hidden;
   position: relative;
 }
@@ -163,6 +171,10 @@ body {
   .slider-container {
     flex-direction: row; /* Stacks sliders vertically on smaller screens */
   }
+  .slider-box img {
+    width: 100%;
+    height: auto;
+  }
 
   .slider-box {
     flex: 1 1 calc(50% - 10px); /* Adjust to 2 per row */
@@ -172,6 +184,10 @@ body {
 @media (max-width: 480px) {
   .slider-box {
     flex: 1 1 100%; /* Full width for small screens */
+  }
+  .slider-box img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -191,7 +207,7 @@ body {
 .hero {
   text-align: center;
   margin-bottom: 70px;
-  margin-top: -200px;
+  margin-top: -100px;
 }
 
 .hero h1 {
@@ -257,22 +273,6 @@ body {
 .feature p {
   font-size: 16px;
   color: #7f8c8d;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 28px;
-    margin-top: 100px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .features {
-    grid-template-columns: 1fr;
-  }
 }
 
 
@@ -478,6 +478,7 @@ body {
     font-size: 22px;
     line-height: 60px;
   }
+  
 
   nav a {
     padding: 5px 15px;
