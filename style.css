@@ -126,6 +126,32 @@ body {
   }
 }
 
+/* header section for landing page */
+.landpage-header-section {
+  background: #c1d4c1de;
+  color: #f1f0ec;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.lplogo a {
+  font-size: 44px;
+  font-weight: bold;
+  color: #083608;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.landingpage {
+  background-color: #060757;
+}
+
 /* Image Slider - Side by Side */
 .image-slider {
   display: flex;
