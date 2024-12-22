@@ -55,7 +55,7 @@ body {
 }
 
 .nav-menu {
-  display: none;
+  /* display: none; */
 }
 .nav-menu.active {
   display: block;
